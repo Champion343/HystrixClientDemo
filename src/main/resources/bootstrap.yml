@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: HystrixClientDemo
+  profiles:
+    active: dev
+  cloud:    
+    config:
+      uri: http://localhost:8888
+      
+endpoints:
+  refresh:
+    enabled: true
+  restart:
+    enabled: true
+
+management:
+  security:
+    enabled: false
