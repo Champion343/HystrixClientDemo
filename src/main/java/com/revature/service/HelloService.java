@@ -13,7 +13,7 @@ public class HelloService {
 	@HystrixCommand(fallbackMethod = "reliable")
 	public String hello() {
 	    RestTemplate restTemplate = new RestTemplate();
-	    URI uri = URI.create("http://localhost:8088/hello");
+	    URI uri = URI.create("http://localhost:8085/api/hystrixdemo/hello");
 
 	    return restTemplate.getForObject(uri, String.class);
 	}
