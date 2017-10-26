@@ -2,10 +2,10 @@ spring:
   application:
     name: HystrixClientDemo
   profiles:
-    active: dev
+    active: production
   cloud:    
     config:
-      uri: http://localhost:8888
+      uri: http://18.220.92.71:8888
       
 endpoints:
   refresh:
