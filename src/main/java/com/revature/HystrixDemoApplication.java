@@ -10,6 +10,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.revature.service.HelloService;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 @RefreshScope
 @EnableCircuitBreaker
